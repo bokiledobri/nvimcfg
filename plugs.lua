@@ -1,21 +1,20 @@
-local Plug = vim.fn['plug#']
 
-vim.call('plug#begin', '~/.config/nvim/plugged')
+return require('packer').startup(function()
+use 'cakebaker/scss-syntax.vim'
+use 'neovim/nvim-lspconfig'
+use 'folke/tokyonight.nvim'
 
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'gruvbox-community/gruvbox'
-Plug 'neovim/nvim-lspconfig'
+use 'hrsh7th/cmp-nvim-lsp'
+use 'hrsh7th/cmp-buffer'
+use 'hrsh7th/cmp-path'
+use 'hrsh7th/cmp-cmdline'
+use 'hrsh7th/nvim-cmp'
+use 'nvim-treesitter/nvim-treesitter'
+use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
 
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
-
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/vim-vsnip'
-vim.call('plug#end')
-vim.cmd[[
-colorscheme gruvbox
-]]
+use 'hrsh7th/cmp-vsnip'
+use 'hrsh7th/vim-vsnip'
+end)
