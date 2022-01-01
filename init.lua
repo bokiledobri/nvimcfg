@@ -1,0 +1,5 @@
+require('bokiledobri/basic')
+require('bokiledobri/plugs')
+require('bokiledobri/mappings')
+require('bokiledobri/lspconfig')
+require('bokiledobri/cmp')

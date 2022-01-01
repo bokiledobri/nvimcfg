@@ -1,0 +1,63 @@
+syntax on
+
+set filetype 
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set numberwidth=4
+set relativenumber
+set signcolumn=number
+set hidden
+set nowrap
+set ignorecase
+set smartcase
+set noswapfile
+set showcmd
+set showmatch
+set nobackup
+set undodir=~/.config/nvim/undodir
+set undofile
+set incsearch
+
+set signcolumn=yes
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+
+call plug#begin('~/.config/nvim/plugged')
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'gruvbox-community/gruvbox'
+Plug 'neovim/nvim-lspconfig'
+
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+call plug#end()
+
+lua require('bokiledobri')
+
+colorscheme gruvbox
+set completeopt=menu,menuone,noselect
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+inoremap jj <esc>
+nnoremap <leader>h :vsplit<CR>
+nnoremap <leader>j :split<CR>
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+
+noremap <c-up> <c-w>-
+noremap <c-down> <c-w>+
+noremap <c-left> <c-w><
+noremap <c-right> <c-w>>
