@@ -27,6 +27,9 @@ opt.undofile = true
 opt.incsearch = true
 opt.signcolumn='yes'
 opt.colorcolumn={80}
+opt.scrolloff=10
+opt.hlsearch=false
+opt.guicursor={}
 g.mapleader=' '
 
 opt.completeopt='menu,menuone,noselect'
