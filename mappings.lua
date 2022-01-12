@@ -38,6 +38,7 @@ noremap{'n', '<leader>ff', '<cmd>FZF<CR>'}
 noremap{'n', '<leader>fg', '<cmd>Rg<CR>'}
 noremap{'n', '<leader>fb', '<cmd>Buffers<CR>'}
 noremap{'n', '<leader>gs', '<cmd>G<CR>'}
-noremap{'n', '<leader>gu', '<cmd>diffget //2<CR>'}
-noremap{'n', '<leader>gh', '<cmd>diffget //3<CR>'}
-noremap{'n', '<leader>gc', '<cmd>GCommit<CR>'}
+noremap{'n', '<leader>gf', '<cmd>diffget //2<CR>'}
+noremap{'n', '<leader>gj', '<cmd>diffget //3<CR>'}
+noremap{'n', '<leader>gc', '<cmd>Git commit<CR>'}
+noremap{'n', '<leader>gp', '<cmd>Git push<CR>'}
