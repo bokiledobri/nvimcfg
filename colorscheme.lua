@@ -1,2 +1,1 @@
-vim.g.tokyonight_transparent=true
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme molokai]]

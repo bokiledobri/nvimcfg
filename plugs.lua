@@ -2,6 +2,7 @@ return require('packer').startup(function()
 use 'cakebaker/scss-syntax.vim'
 use 'neovim/nvim-lspconfig'
 use 'folke/tokyonight.nvim'
+use 'flazz/vim-colorschemes'
 
 use 'hrsh7th/cmp-nvim-lsp'
 use 'hrsh7th/cmp-buffer'
@@ -18,6 +19,7 @@ use 'junegunn/fzf.vim'
 use 'airblade/vim-rooter'
 use 'tpope/vim-fugitive'
 use 'vim-airline/vim-airline'
+use 'stsewd/fzf-checkout.vim'
 
 use 'altercation/vim-colors-solarized'
 

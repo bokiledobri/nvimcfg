@@ -42,3 +42,4 @@ noremap{'n', '<leader>gf', '<cmd>diffget //2<CR>'}
 noremap{'n', '<leader>gj', '<cmd>diffget //3<CR>'}
 noremap{'n', '<leader>gc', '<cmd>Git commit<CR>'}
 noremap{'n', '<leader>gp', '<cmd>Git push<CR>'}
+noremap{'n', '<leader>gg', '<cmd>GCheckout<CR>'}
