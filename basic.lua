@@ -22,7 +22,7 @@ opt.swapfile = false
 opt.showcmd = true
 opt.showmatch = true
 opt.backup = false
-opt.undodir= '~/.config/nvim/undodir'
+opt.undodir= '/home/bojan/.config/nvim/undodir'
 opt.undofile = true
 opt.incsearch = true
 opt.signcolumn='yes'
@@ -31,7 +31,9 @@ opt.scrolloff=10
 opt.hlsearch=false
 opt.guicursor={}
 g.mapleader=' '
+opt.guifont='Fira Mono:h8'
 
+g.neovide_transparency=0.9
 opt.completeopt='menu,menuone,noselect'
 
 local disabled_built_ins = {
